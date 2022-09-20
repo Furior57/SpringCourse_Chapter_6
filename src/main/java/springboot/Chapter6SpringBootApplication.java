@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 // Первое, что мы увидим это аннотацию @SpringBootApplication, эта аннотация объединяет в себе
 // три разных аннотации @Configuration, @EnableAutoConfiguration и @ComponentScan
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "springboot")
 public class Chapter6SpringBootApplication {
     // Далее мы видим метод run() в который передается main класс, он сам создаст контейнер,
     // инициализирует бины и конфигурацию. Какой пакет будет сканироваться для поиска этих
