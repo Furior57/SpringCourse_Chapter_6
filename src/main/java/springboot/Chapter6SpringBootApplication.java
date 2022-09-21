@@ -21,4 +21,5 @@ public class Chapter6SpringBootApplication {
     // сайт start.spring.io. Там все элементарно, здесь описывать ничего не будем. Генерируем
     // проект, скачиваем и открываем нашей IDE./
 
+
 }

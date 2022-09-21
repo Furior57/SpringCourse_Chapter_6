@@ -25,31 +25,31 @@ public class MyRestController {
         List<Employee> allEmployees = service.getAllEmployees();
         return allEmployees;
     }
-//
-//    @GetMapping("/employees/{id}")
-//    public Employee getEmployee(@PathVariable int id) {
-//        Employee employee = service.getEmployee(id);
-//        return employee;
-//    }
-//
-//    @PostMapping("/employees")
-//    public Employee addNewEmployee(@RequestBody Employee employee) {
-//        service.saveEmployee(employee);
-//        return employee;
-//    }
-//
-//    // Изменение существующего работника./
-//    @PutMapping("/employees")
-//    public Employee updateEmployee(@RequestBody Employee employee) {
-//        service.saveEmployee(employee);
-//        return employee;
-//    }
-//    // Удаление работника
-//    @DeleteMapping("/employees/{id}")
-//    public String deleteEmployee(@PathVariable int id) {
-//        Employee employee = service.getEmployee(id);
-//        service.deleteEmployee(id);
-//        return "Employee with ID="+id+" was deleted.";
-//    }
+
+    @GetMapping("/employees/{id}")
+    public Employee getEmployee(@PathVariable int id) {
+        Employee employee = service.getEmployee(id);
+        return employee;
+    }
+
+    @PostMapping("/employees")
+    public Employee addNewEmployee(@RequestBody Employee employee) {
+        service.saveEmployee(employee);
+        return employee;
+    }
+
+    // Изменение существующего работника./
+    @PutMapping("/employees")
+    public Employee updateEmployee(@RequestBody Employee employee) {
+        service.saveEmployee(employee);
+        return employee;
+    }
+    // Удаление работника
+    @DeleteMapping("/employees/{id}")
+    public String deleteEmployee(@PathVariable int id) {
+        Employee employee = service.getEmployee(id);
+        service.deleteEmployee(id);
+        return "Employee with ID="+id+" was deleted.";
+    }
 
 }
